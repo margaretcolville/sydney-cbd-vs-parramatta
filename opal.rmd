@@ -1,0 +1,193 @@
+---
+title: "Which are the busiest Sydney train stations, and are any of them Parramatta?"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load_libraries, include=FALSE}
+
+library(readxl)
+library(readr)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(forcats)
+library(ggplot2)
+library(ggrepel)
+library(directlabels)
+library(ggmap)
+
+
+```
+
+```{r parameters, include=FALSE}
+
+colourlist <- c("Focus" = "firebrick3", "Parramatta" = "gold", "Other" = "grey79")
+
+```
+
+
+```{r data_extract, include=FALSE}
+
+stations <- read_csv('stations.csv')
+lines <- read_csv('TrainLines.csv')
+
+t <- read_xlsx('Train Station Entries and Exits Version 1.0.xlsx', sheet = 2) %>%
+  mutate_at(vars(-matches("STATION")), as.integer) %>%
+  rename(Year = YEAR) %>%
+  rename(Station = STATION) %>%
+  left_join(stations, by = c("Station" = "Station"))
+
+d <- t %>%
+  gather(Measure, Count, -c(Year,Station, lon, lat)) %>%
+  mutate(Direction = word(Measure,1)) %>%
+  mutate(Time = str_replace(Measure, paste0(Direction,' '), ''))
+
+```
+
+The Sydney rail system is known to be bursting at the seams.  Articles about [Town Hall having to close platforms to commuters due to overcrowding](https://www.smh.com.au/national/nsw/town-hall-station-overcrowding-to-force-staff-to-slow-access-at-peak-20180921-p5056j.html) are answered by ad campaigns urging Sydneysiders to perform ['travel hacks'](https://www.mysydney.nsw.gov.au/travelhacks) to avoid commuting during peak hour.  And meanwhile, the government continues to swear blind that [the answer is to create a second CBD in Parramatta](https://www.commercialrealestate.com.au/news/nsw-government-eyes-new-home-for-4000-office-workers-in-parramatta/).
+
+So, how is all that working out, thus far?
+
+An extract showing the number of Opal "tap ons" and "tap offs" by train station on an average day is available from the [Transport for NSW Open Data website](https://opendata.transport.nsw.gov.au/dataset/opal-trips-train).  It includes data for 2016, 2017, and 2018, for both the entire 24 hours and these times:
+
+* Morning Peak
+* Daytime
+* Evening Peak
+* Night through early morning
+
+The busiest stations are the ones with the largest numbers of tap-ons and tap-offs in a day.  Here's the top 20 in 2018:
+
+```{r busiest_stations, echo=FALSE}
+
+t %>%
+    left_join(lines, by = "Station") %>%
+  filter(Year == 2018) %>%
+  rename(TotalEnters24Hours = `Entries 24 hours`) %>%
+  rename(TotalExits24Hours = `Exits 24 hours`) %>%
+  select(Year, Station, TotalEnters24Hours, TotalExits24Hours) %>%
+  mutate(Station = str_replace(Station, " Station", "")) %>%
+  mutate(ColourGroup = case_when(Station == "Parramatta"~"Parramatta",
+                                 Station %in% c("Central", "Town Hall", "Wynyard")~"Focus",
+                                 TRUE~"Other")) %>%
+  mutate(TotalTaps = TotalEnters24Hours + TotalExits24Hours) %>%
+  mutate(Station = fct_reorder(Station, TotalTaps)) %>%
+  top_n(20, TotalTaps) %>%
+  gather(Direction, Count, TotalEnters24Hours:TotalExits24Hours) %>%
+  mutate(Direction = ifelse(Direction == "TotalEnters24Hours","Daily tap ons", "Daily tap offs")) %>%
+  mutate(Direction = factor(Direction, ordered = TRUE, levels = c("Daily tap ons", "Daily tap offs"))) %>%
+  ggplot(aes(x = Station, y = Count, fill = ColourGroup)) +
+  geom_col() + 
+  theme_classic() +
+  coord_flip() +
+  scale_fill_manual(values = colourlist) +
+  facet_grid(~Direction) +
+  guides(fill = FALSE) +
+  labs(title = paste0("By far the busiest stations are Central, Town Hall, and Wynyard",
+                      "\n","Parramatta is a distant fourth place"),
+       x = "",
+       y = "Count in 2018") +
+  NULL
+
+
+```
+
+The busiest stations in the entire network are Central Station, Town Hall Station, and Wynyard Station.  Parramatta Station, in the supposed "Second CBD of Sydney", makes it into a distant fourth place.  
+
+Of course, that doesn't account for time of day.  Most people travel to work in the morning.  Which stations had the largest number of people tapping off in the morning in 2018?
+
+```{r morning_tap_off, echo=FALSE}
+
+t %>%
+  left_join(lines, by="Station") %>%
+  filter(Year == 2018) %>%
+  rename(TotalEnters = `Entries 24 hours`) %>%
+  rename(MorningPeakEnters = `Entries 06:00 to 10:00`) %>%
+  rename(MorningPeakExits = `Exits 06:00 to 10:00`) %>%
+  rename(EveningPeakEnters = `Entries 15:00 to 19:00`) %>%
+  rename(EveningPeakExits = `Exits 15:00 to 19:00`) %>%
+  select(Year, Station, MorningPeakEnters, MorningPeakExits, EveningPeakEnters, EveningPeakExits) %>%
+  mutate(Station = str_replace(Station, " Station", "")) %>%
+  mutate(ColourGroup = case_when(Station == "Parramatta"~"Parramatta",
+                                 Station %in% c("Central", "Town Hall", "Wynyard")~"Focus",
+                                 TRUE~"Other")) %>%
+  mutate(Station = fct_reorder(Station, MorningPeakExits)) %>%
+  top_n(20, MorningPeakExits) %>%
+  ggplot(aes(x = Station,
+             y = MorningPeakExits,
+             fill = ColourGroup)) +
+  geom_col() +
+  scale_fill_manual(values = colourlist) +
+  guides(fill = FALSE) +
+  theme_classic() +
+  coord_flip() +
+  labs(title = paste0("In the morning peak, the three big city stations move even further ",
+                      "\n","in front, while Parramatta's position drifts to sixth place"),
+       x = "",
+       y = "Daily morning tap offs in 2018") +
+  NULL
+
+
+
+```
+
+The stated reason for performing development in Parramatta is to create space for four thousand office workers, taking pressure off the city.  But Wynyard Station alone has more than sixty thousand people leave through the gates in morning peak hour, let alone the other city stations.  Four thousand workers would be a homeopathic drop in the bucket of the problem.
+
+But wait!  Maybe Parramatta's growing so fast that it justifies the development!  How have these numbers changed over the last three years?
+
+```{r morning_exits_trend, echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+
+t %>%
+  inner_join(
+    t %>%
+      group_by(Station) %>%
+      summarise(TotalMorningExits = sum(`Exits 06:00 to 10:00`)) %>%
+      ungroup() %>%
+      top_n(10,TotalMorningExits) %>%
+      select(Station),
+    by = "Station"
+    
+  ) %>% 
+  left_join(lines, by = "Station") %>% 
+  rename(TotalEnters = `Entries 24 hours`) %>%
+  rename(MorningPeakEnters = `Entries 06:00 to 10:00`) %>%
+  rename(MorningPeakExits = `Exits 06:00 to 10:00`) %>%
+  rename(EveningPeakEnters = `Entries 15:00 to 19:00`) %>%
+  rename(EveningPeakExits = `Exits 15:00 to 19:00`) %>%
+  select(Year, Station, MorningPeakEnters, MorningPeakExits, EveningPeakEnters, EveningPeakExits) %>%
+  mutate(Year = as.character(Year)) %>%
+  mutate(Station = str_replace(Station, " Station", "")) %>%
+  mutate(ColourGroup = case_when(Station == "Parramatta"~"Parramatta",
+                                 Station %in% c("Central", "Town Hall", "Wynyard")~"Focus",
+                                 TRUE~"Other")) %>%
+  mutate(label = ifelse(Station %in% c("Central", "Town Hall", "Wynyard", "Parramatta"),Station,"")) %>%
+  mutate(size = ifelse(label == "Parramatta", 1.5, 1)) %>%
+  mutate(Station = fct_reorder(Station, -MorningPeakExits)) %>%
+  ggplot(aes(x = Year,
+             y = MorningPeakExits,
+             group = Station)) +
+  geom_line(aes(col = ColourGroup, size = size)) +
+  geom_point(aes(col = ColourGroup), size = 3) +
+  geom_dl(aes(label = label), method = list(dl.trans(x = x + 0.2), "last.points", cex = 0.7)) +
+  scale_colour_manual(values = colourlist) +
+  scale_size_continuous(range = c(1,1.5)) +
+  expand_limits(y=c(0,NA)) +
+  theme_classic() +
+  guides(col=FALSE) +
+  theme(legend.position = 'top') +
+  labs(title = paste0("Daily morning tap-offs are generally increasing everywhere",
+                      "\n","But increasing more sharply at the largest stations"),
+       x = "Year",
+       y = "Morning tap offs") +
+  guides(size = FALSE) +
+  NULL
+
+
+```
+
+Well, utilisation of Parramatta Station in the mornings *is* increasing.  But the speed of increase is low compared to the increase at the major city stations.  And jumping up a mere four thousand commuters will not change that.  So overall, it looks like the promise of development in Parramatta to ease the burden of the inner city is a distraction at best, if not a complete lie.  Worth keeping in mind, the next time the politicians offer their solutions to Sydney's transport woes.
+
+<br>

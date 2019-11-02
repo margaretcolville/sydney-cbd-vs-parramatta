@@ -1,0 +1,493 @@
+Station,LineGroup,Line
+Aberdeen Station,HUN,Hunter Line
+Adamstown Station,CCN,Central Coast & Newcastle Line
+Albion Park Station,SCO,South Coast Line
+Allawah Station,T4,Eastern Suburbs & Illawarra Line
+Arncliffe Station,T4,Eastern Suburbs & Illawarra Line
+#Artarmon Station,T1,North Shore Line
+#Artarmon Station,T1,Western Line
+Artarmon Station,T9,Northern Line
+#Artarmon Station,CCN,Central Coast & Newcastle Line
+Ashfield Station,T2,Inner-West Line
+#Asquith Station,T1,North Shore Line
+Asquith Station,CCN,Central Coast & Newcastle Line
+#Auburn Station,T1,North Shore Line
+#Auburn Station,T1,Western Line
+Auburn Station,T2,Inner-West Line
+#Auburn Station,T6,Carlingford Line
+Austinmer Station,SCO,South Coast Line
+Awaba Station,CCN,Central Coast & Newcastle Line
+Banksia Station,T4,Eastern Suburbs & Illawarra Line
+Bankstown Station,T3,Bankstown Line
+Bardwell Park Station,T8,Airport & South Line
+Bargo Station,SHL,Southern Highland Line
+Bathurst Station,BMT,Blue Mountains Line
+Beecroft Station,T9,Northern Line
+Bell Station,BMT,Blue Mountains Line
+Bellambi Station,SCO,South Coast Line
+Belmore Station,T3,Bankstown Line
+Berala Station,T3,Bankstown Line
+Beresfield Station,HUN,Hunter Line
+Berowra Station,T1,North Shore Line
+#Berowra Station,CCN,Central Coast & Newcastle Line
+Berry Station,SCO,South Coast Line
+Beverly Hills Station,T8,Airport & South Line
+Bexley North Station,T8,Airport & South Line
+Birrong Station,T3,Bankstown Line
+Blackheath Station,BMT,Blue Mountains Line
+#Blacktown Station,T1,Western Line
+#Blacktown Station,BMT,Blue Mountains Line
+Blacktown Station,T5,Cumberland Line
+Blaxland Station,BMT,Blue Mountains Line
+Bomaderry Station,SCO,South Coast Line
+Bombo Station,SCO,South Coast Line
+Bondi Junction Station,T4,Eastern Suburbs & Illawarra Line
+#Bondi Junction Station,SCO,South Coast Line
+Booragul Station,CCN,Central Coast & Newcastle Line
+Bowral Station,SHL,Southern Highland Line
+Branxton Station,HUN,Hunter Line
+Broadmeadow Station,CCN,Central Coast & Newcastle Line
+Bullaburra Station,BMT,Blue Mountains Line
+Bulli Station,SCO,South Coast Line
+Bundanoon Station,SHL,Southern Highland Line
+Burradoo Station,SHL,Southern Highland Line
+#Burwood Station,T1,North Shore Line
+#Burwood Station,T1,Western Line
+Burwood Station,T2,Inner-West Line
+#Burwood Station,T6,Carlingford Line
+#Burwood Station,T9,Northern Line
+Cabramatta Station,T2,Inner-West Line
+#Cabramatta Station,T3,Bankstown Line
+#Cabramatta Station,T5,Cumberland Line
+Camellia Station,T6,Carlingford Line
+Campbelltown Station,T8,Airport & South Line
+#Campbelltown Station,SHL,Southern Highland Line
+Campsie Station,T3,Bankstown Line
+Canley Vale Station,T2,Inner-West Line
+#Canley Vale Station,T5,Cumberland Line
+Canterbury Station,T3,Bankstown Line
+Cardiff Station,CCN,Central Coast & Newcastle Line
+Caringbah Station,T4,Eastern Suburbs & Illawarra Line
+Carlingford Station,T6,Carlingford Line
+Carlton Station,T4,Eastern Suburbs & Illawarra Line
+Carramar Station,T3,Bankstown Line
+Casula Station,T2,Inner-West Line
+#Casula Station,T5,Cumberland Line
+Central Station,CYC,City Circle
+#Central Station,T1,North Shore Line
+#Central Station,T1,Western Line
+#Central Station,T2,Inner-West Line
+#Central Station,T3,Bankstown Line
+#Central Station,T4,Eastern Suburbs & Illawarra Line
+#Central Station,T6,Carlingford Line
+#Central Station,T8,Airport & South Line
+#Central Station,T9,Northern Line
+#Central Station,BMT,Blue Mountains Line
+#Central Station,CCN,Central Coast & Newcastle Line
+#Central Station,SCO,South Coast Line
+#Central Station,SHL,Southern Highland Line
+#Chatswood Station,T1,North Shore Line
+#Chatswood Station,T1,Western Line
+Chatswood Station,T9,Northern Line
+#Chatswood Station,CCN,Central Coast & Newcastle Line
+Cheltenham Station,T9,Northern Line
+Chester Hill Station,T3,Bankstown Line
+Circular Quay Station,CYC,City Circle
+#Circular Quay Station,T2,Inner-West Line
+#Circular Quay Station,T3,Bankstown Line
+#Circular Quay Station,T8,Airport & South Line
+#Circular Quay Station,SHL,Southern Highland Line
+#Clarendon Station,T1,Western Line
+Clarendon Station,T5,Cumberland Line
+#Clyde Station,T1,North Shore Line
+#Clyde Station,T1,Western Line
+Clyde Station,T2,Inner-West Line
+#Clyde Station,T6,Carlingford Line
+Coalcliff Station,SCO,South Coast Line
+Cockle Creek Station,CCN,Central Coast & Newcastle Line
+Coledale Station,SCO,South Coast Line
+Como Station,T4,Eastern Suburbs & Illawarra Line
+Concord West Station,T9,Northern Line
+Coniston Station,SCO,South Coast Line
+Corrimal Station,SCO,South Coast Line
+Cowan Station,CCN,Central Coast & Newcastle Line
+Cringila Station,SCO,South Coast Line
+Cronulla Station,T4,Eastern Suburbs & Illawarra Line
+Croydon Station,T2,Inner-West Line
+Dapto Station,SCO,South Coast Line
+Denistone Station,T9,Northern Line
+Domestic Station,T8,Airport & South Line
+#Domestic Station,SHL,Southern Highland Line
+Doonside Station,T1,Western Line
+Dora Creek Station,CCN,Central Coast & Newcastle Line
+Douglas Park Station,SHL,Southern Highland Line
+Dulwich Hill Station,T3,Bankstown Line
+Dundas Station,T6,Carlingford Line
+Dungog Station,HUN,Hunter Line
+East Hills Station,T8,Airport & South Line
+East Maitland Station,HUN,Hunter Line
+#East Richmond Station,T1,Western Line
+East Richmond Station,T5,Cumberland Line
+Eastwood Station,T9,Northern Line
+Edgecliff Station,T4,Eastern Suburbs & Illawarra Line
+#Edgecliff Station,SCO,South Coast Line
+Edmondson Park Station,T2,Inner-West Line
+#Edmondson Park Station,T5,Cumberland Line
+Emu Plains Station,T1,Western Line
+#Emu Plains Station,BMT,Blue Mountains Line
+#Engadine Station,T4,Eastern Suburbs & Illawarra Line
+Engadine Station,SCO,South Coast Line
+Epping Station,T9,Northern Line
+#Epping Station,CCN,Central Coast & Newcastle Line
+Erskineville Station,T3,Bankstown Line
+Exeter Station,SHL,Southern Highland Line
+Fairfield Station,T2,Inner-West Line
+#Fairfield Station,T5,Cumberland Line
+Fairy Meadow Station,SCO,South Coast Line
+Fassifern Station,CCN,Central Coast & Newcastle Line
+Faulconbridge Station,BMT,Blue Mountains Line
+Flemington Station,T2,Inner-West Line
+Gerringong Station,SCO,South Coast Line
+Glenbrook Station,BMT,Blue Mountains Line
+#Glenfield Station,SHL,Southern Highland Line
+#Glenfield Station,T2,Inner-West Line
+#Glenfield Station,T5,Cumberland Line
+Glenfield Station,T8,Airport & South Line
+Gordon Station,T9,Northern Line
+#Gordon Station,T1,North Shore Line
+#Gordon Station,CCN,Central Coast & Newcastle Line
+Gosford Station,CCN,Central Coast & Newcastle Line
+Goulburn Station,SHL,Southern Highland Line
+#Granville Station,T1,North Shore Line
+#Granville Station,T1,Western Line
+Granville Station,T2,Inner-West Line
+Green Square Station,T8,Airport & South Line
+Greta Station,HUN,Hunter Line
+Guildford Station,T2,Inner-West Line
+#Guildford Station,T5,Cumberland Line
+Gymea Station,T4,Eastern Suburbs & Illawarra Line
+Hamilton Station,CCN,Central Coast & Newcastle Line
+#Hamilton Station,HUN,Hunter Line
+#Harris Park Station,T1,North Shore Line
+#Harris Park Station,T1,Western Line
+Harris Park Station,T2,Inner-West Line
+#Harris Park Station,T5,Cumberland Line
+Hawkesbury River Station,CCN,Central Coast & Newcastle Line
+Hazelbrook Station,BMT,Blue Mountains Line
+#Heathcote Station,T4,Eastern Suburbs & Illawarra Line
+Heathcote Station,SCO,South Coast Line
+#Helensburgh Station,T4,Eastern Suburbs & Illawarra Line
+Helensburgh Station,SCO,South Coast Line
+Hexham Station,HUN,Hunter Line
+High Street Station,HUN,Hunter Line
+Hilldale Station,HUN,Hunter Line
+Holsworthy Station,T8,Airport & South Line
+Homebush Station,T2,Inner-West Line
+Hornsby Station,T9,Northern Line
+#Hornsby Station,CCN,Central Coast & Newcastle Line
+#Hornsby Station,T1,North Shore Line
+Hurlstone Park Station,T3,Bankstown Line
+Hurstville Station,T4,Eastern Suburbs & Illawarra Line
+#Hurstville Station,SCO,South Coast Line
+Ingleburn Station,T8,Airport & South Line
+International Station,T8,Airport & South Line
+#International Station,SHL,Southern Highland Line
+Jannali Station,T4,Eastern Suburbs & Illawarra Line
+Katoomba Station,BMT,Blue Mountains Line
+Kiama Station,SCO,South Coast Line
+#Killara Station,T1,North Shore Line
+Killara Station,T9,Northern Line
+Kings Cross Station,T4,Eastern Suburbs & Illawarra Line
+#Kings Cross Station,SCO,South Coast Line
+Kingsgrove Station,T8,Airport & South Line
+Kingswood Station,T1,Western Line
+Kirrawee Station,T4,Eastern Suburbs & Illawarra Line
+Kogarah Station,T4,Eastern Suburbs & Illawarra Line
+Koolewong Station,CCN,Central Coast & Newcastle Line
+Kotara Station,CCN,Central Coast & Newcastle Line
+Lakemba Station,T3,Bankstown Line
+Lapstone Station,BMT,Blue Mountains Line
+Lawson Station,BMT,Blue Mountains Line
+Leightonfield Station,T3,Bankstown Line
+Leppington Station,T2,Inner-West Line
+#Leppington Station,T5,Cumberland Line
+Leumeah Station,T8,Airport & South Line
+Leura Station,BMT,Blue Mountains Line
+Lewisham Station,T2,Inner-West Line
+#Lidcombe Station,T1,North Shore Line
+#Lidcombe Station,T1,Western Line
+Lidcombe Station,T2,Inner-West Line
+#Lidcombe Station,T3,Bankstown Line
+#Lidcombe Station,T6,Carlingford Line
+#Lidcombe Station,T7,Olympic Park Line
+Linden Station,BMT,Blue Mountains Line
+#Lindfield Station,T1,North Shore Line
+Lindfield Station,T9,Northern Line
+Lisarow Station,CCN,Central Coast & Newcastle Line
+Lithgow Station,BMT,Blue Mountains Line
+Liverpool Station,T2,Inner-West Line
+#Liverpool Station,T3,Bankstown Line
+#Liverpool Station,T5,Cumberland Line
+Lochinvar Station,HUN,Hunter Line
+Loftus Station,T4,Eastern Suburbs & Illawarra Line
+#Loftus Station,SCO,South Coast Line
+Lysaghts Station,SCO,South Coast Line
+Macarthur Station,T8,Airport & South Line
+#Macarthur Station,SHL,Southern Highland Line
+Macdonaldtown Station,T2,Inner-West Line
+Macquarie Fields Station,T8,Airport & South Line
+Maitland Station,HUN,Hunter Line
+#Marayong Station,T1,Western Line
+Marayong Station,T5,Cumberland Line
+Marrickville Station,T3,Bankstown Line
+Martin Place Station,CYC,City Circle
+#Martin Place Station,T4,Eastern Suburbs & Illawarra Line
+#Martin Place Station,SCO,South Coast Line
+Martins Creek Station,HUN,Hunter Line
+Marulan Station,SHL,Southern Highland Line
+Mascot Station,T8,Airport & South Line
+Meadowbank Station,T9,Northern Line
+Medlow Bath Station,BMT,Blue Mountains Line
+Menangle Station,SHL,Southern Highland Line
+Menangle Park Station,SHL,Southern Highland Line
+Merrylands Station,T2,Inner-West Line
+#Merrylands Station,T5,Cumberland Line
+Metford Station,HUN,Hunter Line
+#Milsons Point Station,T1,North Shore Line
+#Milsons Point Station,T1,Western Line
+#Milsons Point Station,T6,Carlingford Line
+Milsons Point Station,T9,Northern Line
+#Milsons Point Station,CCN,Central Coast & Newcastle Line
+Mindaribba Station,HUN,Hunter Line
+Minnamurra Station,SCO,South Coast Line
+Minto Station,T8,Airport & South Line
+Miranda Station,T4,Eastern Suburbs & Illawarra Line
+Mittagong Station,SHL,Southern Highland Line
+Morisset Station,CCN,Central Coast & Newcastle Line
+Mortdale Station,T4,Eastern Suburbs & Illawarra Line
+Moss Vale Station,SHL,Southern Highland Line
+Mount Colah Station,T1,North Shore Line
+Mount Druitt Station,T1,Western Line
+Mount Kuring-gai Station,T1,North Shore Line
+Mount Victoria Station,BMT,Blue Mountains Line
+#Mulgrave Station,T1,Western Line
+Mulgrave Station,T5,Cumberland Line
+Museum Station,CYC,City Circle
+#Museum Station,T2,Inner-West Line
+#Museum Station,T3,Bankstown Line
+#Museum Station,T8,Airport & South Line
+#Museum Station,SHL,Southern Highland Line
+Muswellbrook Station,HUN,Hunter Line
+Narara Station,CCN,Central Coast & Newcastle Line
+Narwee Station,T8,Airport & South Line
+#Newcastle Station,HUN,Hunter Line
+Newcastle Station,CCN,Central Coast & Newcastle Line
+#Newcastle Interchange,HUN,Hunter Line
+Newcastle Interchange,CCN,Central Coast & Newcastle Line
+Newtown Station,T2,Inner-West Line
+Niagara Park Station,CCN,Central Coast & Newcastle Line
+Normanhurst Station,T9,Northern Line
+North Strathfield Station,T9,Northern Line
+#North Sydney Station,T1,North Shore Line
+#North Sydney Station,T1,Western Line
+#North Sydney Station,T6,Carlingford Line
+North Sydney Station,T9,Northern Line
+#North Sydney Station,CCN,Central Coast & Newcastle Line
+North Wollongong Station,SCO,South Coast Line
+Oak Flats Station,SCO,South Coast Line
+Oatley Station,T4,Eastern Suburbs & Illawarra Line
+Olympic Park Station,T7,Olympic Park Line
+Otford Station,SCO,South Coast Line
+Ourimbah Station,CCN,Central Coast & Newcastle Line
+Padstow Station,T8,Airport & South Line
+Panania Station,T8,Airport & South Line
+#Parramatta Station,T1,North Shore Line
+#Parramatta Station,T1,Western Line
+#Parramatta Station,T2,Inner-West Line
+#Parramatta Station,BMT,Blue Mountains Line
+Parramatta Station,T5,Cumberland Line
+Paterson Station,HUN,Hunter Line
+#Pendle Hill Station,T1,Western Line
+Pendle Hill Station,T5,Cumberland Line
+Pennant Hills Station,T9,Northern Line
+Penrith Station,T1,Western Line
+#Penrith Station,BMT,Blue Mountains Line
+Penrose Station,SHL,Southern Highland Line
+Penshurst Station,T4,Eastern Suburbs & Illawarra Line
+Petersham Station,T2,Inner-West Line
+Picton Station,SHL,Southern Highland Line
+Point Clare Station,CCN,Central Coast & Newcastle Line
+Port Kembla Station,SCO,South Coast Line
+Port Kembla North Station,SCO,South Coast Line
+Punchbowl Station,T3,Bankstown Line
+Pymble Station,T1,North Shore Line
+#Quakers Hill Station,T1,Western Line
+Quakers Hill Station,T5,Cumberland Line
+Redfern Station,CYC,City Circle
+#Redfern Station,T1,North Shore Line
+#Redfern Station,T1,Western Line
+#Redfern Station,T2,Inner-West Line
+#Redfern Station,T3,Bankstown Line
+#Redfern Station,T4,Eastern Suburbs & Illawarra Line
+#Redfern Station,T6,Carlingford Line
+#Redfern Station,T8,Airport & South Line
+#Redfern Station,T9,Northern Line
+#Redfern Station,CCN,Central Coast & Newcastle Line
+#Redfern Station,SCO,South Coast Line
+Regents Park Station,T3,Bankstown Line
+Revesby Station,T8,Airport & South Line
+Rhodes Station,T9,Northern Line
+#Richmond Station,T1,Western Line
+Richmond Station,T5,Cumberland Line
+#Riverstone Station,T1,Western Line
+Riverstone Station,T5,Cumberland Line
+Riverwood Station,T8,Airport & South Line
+Rockdale Station,T4,Eastern Suburbs & Illawarra Line
+Rooty Hill Station,T1,Western Line
+Rosehill Station,T6,Carlingford Line
+#Roseville Station,T1,North Shore Line
+Roseville Station,T9,Northern Line
+Rydalmere Station,T6,Carlingford Line
+Sandgate Station,HUN,Hunter Line
+Scarborough Station,SCO,South Coast Line
+#Schofields Station,T1,Western Line
+Schofields Station,T5,Cumberland Line
+Scone Station,HUN,Hunter Line
+Sefton Station,T3,Bankstown Line
+#Seven Hills Station,T1,Western Line
+Seven Hills Station,T5,Cumberland Line
+Shellharbour Junction Station,SCO,South Coast Line
+Singleton Station,HUN,Hunter Line
+Springwood Station,BMT,Blue Mountains Line
+St James Station,CYC,City Circle
+#St James Station,T2,Inner-West Line
+#St James Station,T3,Bankstown Line
+#St James Station,T8,Airport & South Line
+#St James Station,SHL,Southern Highland Line
+#St Leonards Station,T1,North Shore Line
+#St Leonards Station,T1,Western Line
+St Leonards Station,T9,Northern Line
+#St Leonards Station,CCN,Central Coast & Newcastle Line
+St Marys Station,T1,Western Line
+St Peters Station,T3,Bankstown Line
+#St Peters Station,T8,Airport & South Line
+Stanmore Station,T2,Inner-West Line
+Stanwell Park Station,SCO,South Coast Line
+#Strathfield Station,T1,North Shore Line
+#Strathfield Station,T1,Western Line
+Strathfield Station,T2,Inner-West Line
+#Strathfield Station,T6,Carlingford Line
+#Strathfield Station,T9,Northern Line
+#Strathfield Station,BMT,Blue Mountains Line
+#Strathfield Station,CCN,Central Coast & Newcastle Line
+Summer Hill Station,T2,Inner-West Line
+Sutherland Station,T4,Eastern Suburbs & Illawarra Line
+#Sutherland Station,SCO,South Coast Line
+Sydenham Station,T3,Bankstown Line
+#Sydenham Station,T4,Eastern Suburbs & Illawarra Line
+#Sydenham Station,T8,Airport & South Line
+#Sydenham Station,SHL,Southern Highland Line
+Tahmoor Station,SHL,Southern Highland Line
+Tallong Station,SHL,Southern Highland Line
+Tarro Station,HUN,Hunter Line
+Tascott Station,CCN,Central Coast & Newcastle Line
+Telarah Station,HUN,Hunter Line
+Telopea Station,T6,Carlingford Line
+Tempe Station,T4,Eastern Suburbs & Illawarra Line
+Teralba Station,CCN,Central Coast & Newcastle Line
+Thirroul Station,SCO,South Coast Line
+Thornleigh Station,T9,Northern Line
+Thornton Station,HUN,Hunter Line
+#Toongabbie Station,T1,Western Line
+Toongabbie Station,T5,Cumberland Line
+Town Hall Station,CYC,City Circle
+#Town Hall Station,T2,Inner-West Line
+#Town Hall Station,T1,North Shore Line
+#Town Hall Station,T1,Western Line
+#Town Hall Station,T2,Inner-West Line
+#Town Hall Station,T3,Bankstown Line
+#Town Hall Station,T4,Eastern Suburbs & Illawarra Line
+#Town Hall Station,T6,Carlingford Line
+#Town Hall Station,T8,Airport & South Line
+#Town Hall Station,T9,Northern Line
+#Town Hall Station,CCN,Central Coast & Newcastle Line
+#Town Hall Station,SCO,South Coast Line
+#Town Hall Station,SHL,Southern Highland Line
+Towradgi Station,SCO,South Coast Line
+Tuggerah Station,CCN,Central Coast & Newcastle Line
+Turramurra Station,T1,North Shore Line
+Turrella Station,T8,Airport & South Line
+Unanderra Station,SCO,South Coast Line
+Valley Heights Station,BMT,Blue Mountains Line
+Victoria Street Station,HUN,Hunter Line
+Villawood Station,T3,Bankstown Line
+#Vineyard Station,T1,Western Line
+Vineyard Station,T5,Cumberland Line
+Wahroonga Station,T1,North Shore Line
+Waitara Station,T1,North Shore Line
+Wallarobba Station,HUN,Hunter Line
+Warabrook Station,HUN,Hunter Line
+Waratah Station,HUN,Hunter Line
+Warnervale Station,CCN,Central Coast & Newcastle Line
+Warrawee Station,T1,North Shore Line
+Warrimoo Station,BMT,Blue Mountains Line
+Warwick Farm Station,T2,Inner-West Line
+#Warwick Farm Station,T3,Bankstown Line
+#Warwick Farm Station,T5,Cumberland Line
+#Waterfall Station,T4,Eastern Suburbs & Illawarra Line
+Waterfall Station,SCO,South Coast Line
+#Waverton Station,T1,North Shore Line
+#Waverton Station,T1,Western Line
+Waverton Station,T9,Northern Line
+#Waverton Station,CCN,Central Coast & Newcastle Line
+Wentworth Falls Station,BMT,Blue Mountains Line
+#Wentworthville Station,T1,Western Line
+Wentworthville Station,T5,Cumberland Line
+Werrington Station,T1,Western Line
+West Ryde Station,T9,Northern Line
+#Westmead Station,T1,Western Line
+Westmead Station,T5,Cumberland Line
+Wiley Park Station,T3,Bankstown Line
+#Windsor Station,T1,Western Line
+Windsor Station,T5,Cumberland Line
+Wingello Station,SHL,Southern Highland Line
+Wirragulla Station,HUN,Hunter Line
+#Wolli Creek Station,T4,Eastern Suburbs & Illawarra Line
+Wolli Creek Station,T8,Airport & South Line
+#Wolli Creek Station,SCO,South Coast Line
+#Wolli Creek Station,SHL,Southern Highland Line
+Wollongong Station,SCO,South Coast Line
+#Wollstonecraft Station,T1,North Shore Line
+#Wollstonecraft Station,T1,Western Line
+Wollstonecraft Station,T9,Northern Line
+#Wollstonecraft Station,CCN,Central Coast & Newcastle Line
+Wombarra Station,SCO,South Coast Line
+Wondabyne Station,CCN,Central Coast & Newcastle Line
+Woodford Station,BMT,Blue Mountains Line
+Woolooware Station,T4,Eastern Suburbs & Illawarra Line
+Woonona Station,SCO,South Coast Line
+Woy Woy Station,CCN,Central Coast & Newcastle Line
+Wyee Station,CCN,Central Coast & Newcastle Line
+Wynyard Station,CYC,City Circle
+#Wynyard Station,T2,Inner-West Line
+#Wynyard Station,T1,North Shore Line
+#Wynyard Station,T1,Western Line
+#Wynyard Station,T2,Inner-West Line
+#Wynyard Station,T3,Bankstown Line
+#Wynyard Station,T6,Carlingford Line
+#Wynyard Station,T8,Airport & South Line
+#Wynyard Station,T9,Northern Line
+#Wynyard Station,CCN,Central Coast & Newcastle Line
+#Wynyard Station,SHL,Southern Highland Line
+Wyong Station,CCN,Central Coast & Newcastle Line
+Yagoona Station,T3,Bankstown Line
+Yennora Station,T2,Inner-West Line
+#Yennora Station,T5,Cumberland Line
+Yerrinbool Station,SHL,Southern Highland Line
+Zig Zag Station,BMT,Blue Mountains Line
+Macquarie Park Station,MET,Metro Line
+Macquarie University Station,MET,Metro Line
+North Ryde Station,MET,Metro Line
+Wickham Station,CCN,Central Coast & Newcastle Line
+Kembla Grange Station,SCO,South Coast Line
+Civic Station,CCN,Central Coast & Newcastle Line
